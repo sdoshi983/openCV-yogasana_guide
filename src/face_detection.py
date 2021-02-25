@@ -1,6 +1,7 @@
 import cv2
 
 cap = cv2.VideoCapture(0)
+classifer = cv2.CascadeClassifier("assets/haarcascade_frontalface_default.xml")
 
 while True:
     isReturned, frame = cap.read()
